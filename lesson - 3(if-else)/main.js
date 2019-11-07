@@ -1,206 +1,208 @@
 function clog(text) {
-    console.log(text);
-};
+  console.log(text);
+}
 
 // Task - 1 ( Если переменная a равна нулю, то выведите 'Верно', иначе выведите 'Неверно'. Проверьте работу скрипта при a, равном 1, 0, -3.)
 let a = 1;
 if (a == 0) {
-    clog('Right')
+  clog("Right");
 } else {
-    clog('Not right')
+  clog("Not right");
 }
 
 // Task - 2 (Если переменная a больше нуля, то выведите 'Верно', иначе выведите 'Неверно'. Проверьте работу скрипта при a, равном 1, 0, -3)
 let b = 2;
 if (b > 0) {
-    clog('Right')
+  clog("Right");
 } else {
-    clog('Not right')
+  clog("Not right");
 }
 
 // Task - 3 (Если переменная a меньше нуля, то выведите 'Верно', иначе выведите 'Неверно'. Проверьте работу скрипта при a, равном 1, 0, -3.)
 let c = 3;
 if (c < 0) {
-    clog('Right')
+  clog("Right");
 } else {
-    clog('Not right')
+  clog("Not right");
 }
 
 // Task - 4 (Если переменная a больше или равна нулю, то выведите 'Верно', иначе выведите 'Неверно'. Проверьте работу скрипта при a, равном 1, 0, -3.)
 let d = 1;
 if (d >= 0) {
-    clog('Right')
+  clog("Right");
 } else {
-    clog('Not right')
+  clog("Not right");
 }
 
 // Task - 5 (Если переменная a меньше или равна нулю, то выведите 'Верно', иначе выведите 'Неверно'. Проверьте работу скрипта при a, равном 1, 0, -3.)
 let e = 5;
 if (e <= 0) {
-    clog('Right')
+  clog("Right");
 } else {
-    clog('Not right')
+  clog("Not right");
 }
 
 // Task - 6 (Если переменная a не равна нулю, то выведите 'Верно', иначе выведите 'Неверно'. Проверьте работу скрипта при a, равном 1, 0, -3.)
 let f = 0;
 if (f == 0) {
-    clog('Right')
+  clog("Right");
 } else {
-    clog('Not right')
+  clog("Not right");
 }
 
 // Task - 7 (Если переменная a равна 'test', то выведите 'Верно', иначе выведите 'Неверно'. Проверьте работу скрипта при a, равном 'test', 'тест', 3.)
-let g = ('тест');
-if (g == 'test') {
-    clog('Right')
+let g = "тест";
+if (g == "test") {
+  clog("Right");
 } else {
-    clog('Not right')
+  clog("Not right");
 }
 
 // Task - 8 (Если переменная a равна '1' и по значению и по типу, то выведите 'Верно', иначе выведите 'Неверно'. Проверьте работу скрипта при a, равном '1', 1, 3.)
-let h = ('1');
-if (h === '1') {
-    clog('Right')
+let h = "1";
+if (h === "1") {
+  clog("Right");
 } else {
-    clog('Not right')
+  clog("Not right");
 }
 
 // Task - 9 (Если переменная test равна true, то выведите 'Верно', иначе выведите 'Неверно'. Проверьте работу скрипта при test, равном true, false. Напишите два варианта скрипта - с короткой записью и с длинной)
-let test = (false);
+let test = false;
 if (test == true) {
-    clog('Right')
+  clog("Right");
 } else {
-    clog('Not right')
+  clog("Not right");
 }
 
 if (test) {
-    clog('Right')
+  clog("Right");
 } else {
-    clog('Not right')
+  clog("Not right");
 }
 
 // Task - 10 (Если переменная test не равна true, то выведите 'Верно', иначе выведите 'Неверно'. Проверьте работу скрипта при test, равном true, false. Напишите два варианта скрипта - с короткой записью и с длинной)
 if (test != true) {
-    clog('Right')
+  clog("Right");
 } else {
-    clog('Not right')
+  clog("Not right");
 }
 
 if (!test) {
-    clog('Right')
+  clog("Right");
 } else {
-    clog('Not right')
+  clog("Not right");
 }
 
 // Task - 11 (Если переменная a больше нуля и меньше 5-ти, то выведите 'Верно', иначе выведите 'Неверно'. Проверьте работу скрипта при a, равном 5, 0, -3, 2.)
 let i = -5;
 if (i > 0 && i < 5) {
-    clog('Right')
+  clog("Right");
 } else {
-    clog('Not right')
+  clog("Not right");
 }
 
 // Task - 12 (Если переменная a равна нулю или равна двум, то прибавьте к ней 7, иначе поделите ее на 10. Выведите новое значение переменной на экран. Проверьте работу скрипта при a, равном 5, 0, -3, 2.)
 let j = 2;
 if (j == 0 || j == 2) {
-    clog(j + 7)
+  clog(j + 7);
 } else {
-    clog(j / 10)
+  clog(j / 10);
 }
 
 // Task - 13 (Если переменная a равна или меньше 1, а переменная b больше или равна 3, то выведите сумму этих переменных, иначе выведите их разность (результат вычитания). Проверьте работу скрипта при a и b, равном 1 и 3, 0 и 6, 3 и 5.)
 let k = 3;
 let l = 5;
 if (k <= 1 && l >= 3) {
-    clog(k + l)
+  clog(k + l);
 } else {
-    clog(k - l)
+  clog(k - l);
 }
 
 // Task - 14 (Если переменная a больше 2-х и меньше 11-ти, или переменная b больше или равна 6-ти и меньше 14-ти, то выведите 'Верно', в противном случае выведите 'Неверно'.)
 let m = 1;
 let n = 6;
-if ((m > 2 && m < 11) || (n >= 6)) {
-    clog('Right')
+if ((m > 2 && m < 11) || n >= 6) {
+  clog("Right");
 } else {
-    clog('Not right')
+  clog("Not right");
 }
 
 // Task - 15 (Переменная num может принимать 4 значения: 1, 2, 3 или 4. Если она имеет значение '1', то в переменную result запишем 'зима', если имеет значение '2' – 'весна' и так далее. Решите задачу через switch-case.)
-let num = '3';
+let num = "3";
 switch (num) {
-    case '1':
-        result = 'Winter';
-        break;
-    case '2':
-        result = 'Spring';
-        break;
-    case '3':
-        result = 'Summer';
-        break;
-    case '4':
-        result = 'Autumn';
-        break;
+  case "1":
+    result = "Winter";
+    break;
+  case "2":
+    result = "Spring";
+    break;
+  case "3":
+    result = "Summer";
+    break;
+  case "4":
+    result = "Autumn";
+    break;
 }
 clog(result);
 
 // Task - 16 (В переменной day лежит какое-то число из интервала от 1 до 31. Определите в какую декаду месяца попадает это число (в первую, вторую или третью).)
 let day = 15;
 if (day <= 10) {
-    clog('First decade');
+  clog("First decade");
 }
 if (day >= 11 && day <= 20) {
-    clog('Second decade');
+  clog("Second decade");
 }
 if (day >= 21 && day <= 31) {
-    clog('third decade');
+  clog("third decade");
 }
 
 // Task - 17 (В переменной month лежит какое-то число из интервала от 1 до 12. Определите в какую пору года попадает этот месяц (зима, лето, весна, осень).)
 let month = 7;
 if (month <= 3) {
-    clog('Winter');
+  clog("Winter");
 }
 if (month > 3 && month <= 6) {
-    clog('Spring');
+  clog("Spring");
 }
 if (month > 6 && month <= 9) {
-    clog('Summer');
+  clog("Summer");
 }
 if (month > 9 && month <= 12) {
-    clog('Autumn')
+  clog("Autumn");
 }
 
 // Task - 18 (Дана строка, состоящая из символов, например, 'abcde'. Проверьте, что первым символом этой строки является буква 'a'. Если это так - выведите 'да', в противном случае выведите 'нет'.)
-let str = 'abcde';
-if (str[0] === 'a') {
-    clog('Yes')
+let str = "abcde";
+if (str[0] === "a") {
+  clog("Yes");
 } else {
-    clog('No')
+  clog("No");
 }
 
 // Task - 19 (Дана строка с цифрами, например, '12345'. Проверьте, что первым символом этой строки является цифра 1, 2 или 3. Если это так - выведите 'да', в противном случае выведите 'нет'.)
-let nums = '02345';
-if (nums[0] === '1') {
-    clog('Yes')
-} else if (nums[0] === '2') {
-    clog('Yes')
-} else if (nums[0] === '3') {
+let nums = "02345";
+if (nums[0] === "1") {
+  clog("Yes");
+} else if (nums[0] === "2") {
+  clog("Yes");
+} else if (nums[0] === "3") {
+  clog("Yes");
+} else {
+  clog("No");
+}
+
+// Task - 20 ( Дана строка из 3-х цифр. Найдите сумму этих цифр. То есть сложите как числа первый символ строки, второй и третий.)
+let numNum = "123";
+let sum = Number(numNum[0]) + Number(numNum[1]) + Number(numNum[2]);
+clog(sum);
+
+// Task - 21 (Дана строка из 6-ти цифр. Проверьте, что сумма первых трех цифр равняется сумме вторых трех цифр. Если это так - выведите 'да', в противном случае выведите 'нет'.)
+let num2 = "123600";
+let sum3 = Number(num2[0]) + Number(num2[1]) + Number(num2[2]);
+let sum4 = Number(num2[3]) + Number(num2[4]) + Number(num2[5]);
+if (sum3 == sum4) {
     clog('Yes')
 } else {
     clog('No')
 }
-
-// Task - 20 ()
-// let numNum = '123';
-
-// let num1 = numNum[0];
-// let num2 = numNum[1];
-// let num3 = numNum[2];
-
-// if (numNum.length == 3) {
-//     clog(num1 + num2 + num3);
-// } else {
-//     clog('Too much numbers')
-// }
