@@ -171,3 +171,36 @@ if (month > 6 && month <= 9) {
 if (month > 9 && month <= 12) {
     clog('Autumn')
 }
+
+// Task - 18 (Дана строка, состоящая из символов, например, 'abcde'. Проверьте, что первым символом этой строки является буква 'a'. Если это так - выведите 'да', в противном случае выведите 'нет'.)
+let str = 'abcde';
+if (str[0] === 'a') {
+    clog('Yes')
+} else {
+    clog('No')
+}
+
+// Task - 19 (Дана строка с цифрами, например, '12345'. Проверьте, что первым символом этой строки является цифра 1, 2 или 3. Если это так - выведите 'да', в противном случае выведите 'нет'.)
+let nums = '02345';
+if (nums[0] === '1') {
+    clog('Yes')
+} else if (nums[0] === '2') {
+    clog('Yes')
+} else if (nums[0] === '3') {
+    clog('Yes')
+} else {
+    clog('No')
+}
+
+// Task - 20 ()
+// let numNum = '123';
+
+// let num1 = numNum[0];
+// let num2 = numNum[1];
+// let num3 = numNum[2];
+
+// if (numNum.length == 3) {
+//     clog(num1 + num2 + num3);
+// } else {
+//     clog('Too much numbers')
+// }
