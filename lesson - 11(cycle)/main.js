@@ -24,13 +24,18 @@ for (let i = 1; i < 10; i++) {
 clog('-' + num3);
 
 // Task - 4 (Нарисуйте пирамиду, как показано на рисунке, только у вашей пирамиды должно быть 20 рядов)
+/*
+x
+xx
+xxx
+xxxx
+xxxxx
+*/
 let str = '';
 for (let i = 0; i < 20; i++) {
 	str += 'x';
 	document.write(str + '<br>');
 }
-
-'<hr>'
 
 // Task - 5 (С помощью двух вложенных циклов нарисуйте следующую пирамидку:)
 /*
@@ -60,19 +65,7 @@ xxxxxxxx
 xxxxxxxxxx
 */
 let str2 = '';
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < 5; i++) {
 	str2 += 'xx';
 	document.write(str2 + '<br>');
 }
-
-
-
-
-
-
-
-
-
-
-
-
