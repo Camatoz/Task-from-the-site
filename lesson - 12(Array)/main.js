@@ -12,12 +12,14 @@ for (let i = 0; i < 5; i++) {
 clog(arr);
 
 // Task - 2 (Заполните массив следующим образом: в первый элемент запишите '1', во второй '22', в третий '333' и так далее.)
-let arr2 = [];
-for (let i = 1; i < 5; i++) {
-    let str2 = '';
+str = '';
+arr = [];
+for (let i = 1; i < 5; i++) { 
     for (let j = 1; j <= i; j++) {
-        str2 += i;
-        arr2[i] = str2 + i;
+        str += i;
     }
+    arr.push(str);
+    str = '';
 }
-clog(arr2);
+clog(arr);
+
