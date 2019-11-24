@@ -13,8 +13,8 @@ function inArray(value, arr) {
   return false;
 }
 
-let arr = [1, 2, 3, 4, 5];
-clog(inArray(7, arr));
+let arri = [1, 2, 3, 4, 5];
+clog(inArray(7, arri));
 
 // Task - 0 (Задача: реализуйте функцию isSimple, которая параметром будет принимать число и проверять, простое оно или нет. Простое число - это число, которое не делится ни на одно другое число (кроме как на 1 и на само себя - на это делятся все числа). Если число простое - функция должна вернуть true, в противном случае false.)
 function isSimple(num) {
@@ -64,15 +64,54 @@ function getGreatestCommonDivisor(num1, num2) {
 clog(getGreatestCommonDivisor(12, 18)); //выведет 6
 
 // Task - 1 (Дана строка. Сделайте заглавным первый символ каждого слова этой строки. Для этого сделайте вспомогательную функцию ucfirst, которая будет получать строку, делать первый символ этой строки заглавным и возвращать обратно строку с заглавной первой буквой.)
-let str = 'я учу java script!';
-
 function ucfirst(str) {
-  let myArr = str.split(' ');
-  let newStr = '';
+  let myArr = str.split(" ");
+  let newStr = "";
   for (let i = 0; i < myArr.length; i++) {
-    newStr += myArr[i][0].toUpperCase() + myArr[i].slice(1) + ' ';
+    newStr += myArr[i][0].toUpperCase() + myArr[i].slice(1) + " ";
   }
   return newStr;
 }
 
-clog(ucfirst('я учу java script!'));
+clog(ucfirst("я учу java script!"));
+
+// Task - 2 (Дана строка вида 'var_text_hello'. Сделайте из него текст 'varTextHello'.)
+function bigFirstLetter(str) {
+  let arr = str.split("_");
+  let newStr = arr[0];
+  for (let i = 1; arr.length > i; i++) {
+    newStr += arr[i][0].toUpperCase() + arr[i].slice(1);
+  }
+  return newStr;
+}
+document.write(bigFirstLetter("let_text_hello_let_text_hello"));
+
+// Task - 3 (Сделайте функцию inArray, которая определяет, есть в массиве элемент с заданным текстом или нет. Функция первым параметром должна принимать текст элемента, а вторым - массив, в котором делается поиск. Функция должна возвращать true или false.)
+function inArray2(value, arr) {
+  for (let i = 0; i < words.length; i++) {
+    if (arr[i] == value) {
+      return true;
+    }
+  }
+  return false;
+}
+
+let words = ["big", "bad", "bag"];
+let search = "bad";
+clog(inArray2(search, words));
+
+// Task = 4 (Дана строка, например, '123456'. Сделайте из нее '214365'.)
+function sameRevers(str) {
+  let arr = str.split("");
+  for (let i = 0; i < arr.length; i++) {
+    if (i % 2 !== 0) {
+      let b = arr[i - 1];
+      arr[i - 1] = arr[i];
+      arr[i] = b;
+    }
+  }
+  str = arr.join("");
+  return str;
+}
+let str = "1234567890";
+clog(sameRevers(str));
