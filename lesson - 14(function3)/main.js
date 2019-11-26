@@ -79,7 +79,7 @@ clog(ucfirst("я учу java script!"));
 function bigFirstLetter(str) {
   let arr = str.split("_");
   let newStr = arr[0];
-  for (let i = 1; arr.length > i; i++) {
+  for (let i = 1; i < arr.length; i++) {
     newStr += arr[i][0].toUpperCase() + arr[i].slice(1);
   }
   return newStr;
@@ -88,7 +88,7 @@ document.write(bigFirstLetter("let_text_hello_let_text_hello"));
 
 // Task - 3 (Сделайте функцию inArray, которая определяет, есть в массиве элемент с заданным текстом или нет. Функция первым параметром должна принимать текст элемента, а вторым - массив, в котором делается поиск. Функция должна возвращать true или false.)
 function inArray2(value, arr) {
-  for (let i = 0; i < words.length; i++) {
+  for (let i = 0; i < arr.length; i++) {
     if (arr[i] == value) {
       return true;
     }
@@ -96,9 +96,9 @@ function inArray2(value, arr) {
   return false;
 }
 
-let words = ["big", "bad", "bag"];
-let search = "bad";
-clog(inArray2(search, words));
+let arr = ["big", "bad", "bag"];
+let value = "bad";
+clog(inArray2(value, arr));
 
 // Task = 4 (Дана строка, например, '123456'. Сделайте из нее '214365'.)
 function sameRevers(str) {
