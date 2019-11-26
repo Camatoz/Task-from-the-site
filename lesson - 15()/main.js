@@ -34,7 +34,27 @@ for (let i = 100; i > 0; i--) {
 document.write("<hr>");
 
 // Task - 3 (Выведите с помощью цикла столбец четных чисел от 1 до 100.)
-for ( let i = 2; i < 100; i += 2) {
+for (let i = 2; i < 100; i += 2) {
   document.write(i + '-');
 }
+document.write("<hr>");
+
+// Task - 4 (Заполните массив 10-ю иксами с помощью цикла.)
+let arr1 = [];
+for (let i = 0; i < 10; i++) {
+  arr1[i] = 'x';
+}
+clog(arr1);
+
+// Task - 5 (Заполните массив числами от 1 до 10 с помощью цикла.)
+for (let i = 1; i <= 10; i++)
+  document.write(i);
+document.write("<hr>");
+
+// Task - 6 (Заполните массив 10-ю случайными числами (дробями) от 0 до 1 с помощью цикла. Дроби округляйте до двух знаков в дробной части.)
+let arr2 = [];
+for (let i = 0; i <= 10; i++) {
+  arr2.push(Math.random().toFixed(2));
+}
+document.write(arr2);
 document.write("<hr>");
