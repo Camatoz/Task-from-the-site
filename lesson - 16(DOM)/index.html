@@ -9,18 +9,67 @@
     <h1>old.code.mu</h1>
     <!-- Task - 1 -->
     <p>Task - 1</p>
-    <button onclick="buttonClick()">Нажми на меня</button>
-    <br>
+    <button onclick="buttonClick()">Нажми на меня!</button>
+    <br />
+
     <!-- Task - 2 -->
     <p>Task - 2</p>
-    <button onmouseover="buttonClick1()">Наведи на меня</button>
-    <br>
+    <button onmouseover="onMouseOver()">Наведи на меня!</button>
+    <br />
+
     <!-- Task - 3 -->
     <p>Task - 3</p>
-    <button ondblclick="buttonClick2()">Двойной Click</button>
-    <br>
+    <button ondblclick="buttonDoubleClick()">Двойной Click!</button>
+    <br />
 
-    <input type="text" id="input" placeholder="Введите число!" />
+    <!-- Task - 4 -->
+    <p>Task - 4</p>
+    <div
+      onmouseout="onMouseOut()"
+      style="border: 1px solid red;height: 100px;width:200px;"
+    >
+      Наведи на меня мышь - а потом убери!
+    </div>
+    <br />
+
+    <!-- Task - 5 -->
+    <p>Task - 5</p>
+    <input type="text" value="Ky-ky" id="test" />
+    <button onclick="go()">Нажми на меня!</button>
+    <br />
+
+    <!-- Task - 6 -->
+    <p>Task - 6</p>
+    <input type="text" value="Ky-ky" id="test1" />
+    <button onclick="go1()">Нажми на меня!</button>
+    <br />
+
+    <!-- Task - 7 -->
+    <p>Task - 7</p>
+    <img src="1.jpg" width="150" id="monkey" />
+    <br />
+    <button onclick="monkey()">Нажми на меня!</button>
+    <br />
+
+    <!-- Task - 8 -->
+    <p>Task - 8</p>
+    <input type="text" value="Нажми на меня!!!" onfocus="more(this)" />
+    <br />
+
+    <!-- Task - 9 -->
+    <p>Task - 9</p>
+    <input type="text" onclick="anotherText(this)" value="Нажми на меня!" />
+    <br />
+
+    <!-- Task - 10 -->
+    <p>Task - 10</p>
+    <input
+      type="text"
+      onclick="anotherText2(this)"
+      value="Нажми на меня!"
+      onblur="stop(this)"
+    />
+    <br />
 
     <script src="main.js"></script>
   </body>
